@@ -1,0 +1,5 @@
+.env
+./.idea
+./test-results
+./node_modules
+./dist
