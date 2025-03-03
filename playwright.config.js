@@ -1,10 +1,10 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const test_1 = require("@playwright/test");
-exports.default = (0, test_1.defineConfig)({
+import { defineConfig } from '@playwright/test';
+
+export default defineConfig({
     testDir: './tests',
     timeout: 30000,
     use: {
+        baseURL: 'http://localhost:8000',
         headless: true,
         viewport: { width: 1280, height: 720 },
         actionTimeout: 5000,

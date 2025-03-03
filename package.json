@@ -1,32 +1,18 @@
 {
-  "name": "playwright-ts-automation",
+  "name": "research01",
   "version": "1.0.0",
-  "description": "---",
+  "description": "",
   "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
-    "test": "playwright test",
-    "test:debug": "playwright test --debug",
-    "test:headed": "playwright test --headed"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thaophan24/playwright-ts-automation.git"
-  },
-  "keywords": [],
-  "author": "Iris",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thaophan24/playwright-ts-automation/issues"
-  },
-  "homepage": "https://github.com/thaophan24/playwright-ts-automation#readme",
-  "dependencies": {
-    "@playwright/test": "^1.50.1"
+    "build": "tsc",
+    "test:cucumber": "cucumber-js tests/features/"
   },
   "devDependencies": {
-    "@types/node": "^22.13.5",
-    "typescript": "^5.8.1-rc"
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.8",
+    "allure-playwright": "^3.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   }
 }
